@@ -1,5 +1,5 @@
 const techReact = (params) => (
-  <div className="tech">
+  <div className="tech" key={params.id}>
     <img src={`https://logo.clearbit.com/${params.url}`} alt="" />
     <span>{params.name}</span>
   </div>
@@ -14,14 +14,17 @@ const techReact = (params) => (
 
 const TECHNOLOGIES = [
   {
+    id:1,
     url: 'reactjs.org',
     name: 'React JS',
   },
   {
+    id:2,
     url: 'nodejs.org',
     name: 'Node JS',
   },
   {
+    id:3,
     url: 'graphql.org',
     name: 'GraphQL',
   },
